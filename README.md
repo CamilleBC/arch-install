@@ -1,7 +1,7 @@
 # arch-install
 The goal is to have a global install script in master, and maybe some specific scripts for different machines. Those may simply be in the repo, or in different branches, depending on what is more comfortable.
-### Various links to keep
-#### 1. Arch configuration
+## Steps
+### 1. Arch configuration
 1. Mount partitions where they need to be (EFI + data)
 2. Configure network access (wireless with wpa_supplicant or lan)
 3. pacstrap base base-devel /mnt
@@ -16,7 +16,7 @@ The goal is to have a global install script in master, and maybe some specific s
 8. Generate the grub config:
 `grub-mkconfig -o /boot/grub/grub.cfg`
 9. ***TODO:*** Install *openssh* and find a way to add a ssh key to github, using a script. Then pull the dotfiles.
-#### 2. Network configuration
+### 2. Network configuration
 * Content for the wpa_supplicant conf, if the protocol is WPA2/AES (located in /etc/wpa_supplicant/wpa_supplicant-*interface*.conf)
 ```
 ctrl_interface=/run/wpa_supplicant                                                
@@ -50,7 +50,7 @@ makepkg -si
 `curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher`
 4. Install the fisherman plugins:
 `fisher fzf edc/bass omf/thefuck`
-#### 5. Termite configuration
+### 5. Termite configuration
 1. Install termite:
 `trizen -Sy termite`
 2. Install [onedark base16 color theme](https://github.com/khamer/base16-termite/blob/master/themes/base16-onedark.config):
@@ -59,10 +59,10 @@ mkdir -p ~/.config/termite
 curl https://raw.githubusercontent.com/khamer/base16-termite/master/themes/base16-onedark.config >> ~/.config/termite/config
 ```
 
-#### 7. Xorg server configuration
-#### 8. I3 configuration
-#### 6. Dev Env configuration
-##### 1. NVM configuration
+### 7. Xorg server configuration
+### 8. I3 configuration
+### 6. Dev Env configuration
+#### 1. NVM configuration
 To be able to use the Node.js Version Manager in fish shell, follow these steps:
 1. Install NVM manually (https://github.com/creationix/nvm)
 2. Install bass (https://github.com/edc/bass)
@@ -77,4 +77,4 @@ end
 `nvm install stable`
 6. Set stable version to default
 `nvm alias default stable`
-##### 2. VScode configuration
+#### 2. VScode configuration
