@@ -15,7 +15,7 @@ The goal is to have a global install script in master, and maybe some specific s
 `grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch-grub`
 8. Generate the grub config:
 `grub-mkconfig -o /boot/grub/grub.cfg`
-9. ***TODO:*** Install *openssh* and find a way to add a ssh key to github, using a script. Then pull the dotfiles.
+9. **IMPORTANT**: ***TODO:*** Install *openssh* and find a way to add a ssh key to github, using a script. Then pull the dotfiles.
 ### 2. Network configuration
 * Content for the wpa_supplicant conf, if the protocol is WPA2/AES (located in /etc/wpa_supplicant/wpa_supplicant-*interface*.conf)
 ```
@@ -51,17 +51,16 @@ makepkg -si
 4. Install the fisherman plugins:
 `fisher fzf edc/bass omf/thefuck`
 ### 5. Termite configuration
-1. Install termite:
+1. Install [termite](https://github.com/thestinger/termite):
 `trizen -Sy termite`
 2. Install [onedark base16 color theme](https://github.com/khamer/base16-termite/blob/master/themes/base16-onedark.config):
 ```
 mkdir -p ~/.config/termite
 curl https://raw.githubusercontent.com/khamer/base16-termite/master/themes/base16-onedark.config >> ~/.config/termite/config
 ```
-
-### 7. Xorg server configuration
-### 8. I3 configuration
-### 6. Dev Env configuration
+### 6. Xorg server configuration
+### 7. I3 configuration
+### 8. Dev Env configuration
 #### 1. NVM configuration
 To be able to use the Node.js Version Manager in fish shell, follow these steps:
 1. Install NVM manually (https://github.com/creationix/nvm)
