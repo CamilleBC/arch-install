@@ -33,9 +33,9 @@ network={
 }                                                                                                               
 ```
 * start dhcpcd as a service as well:
-`systemctl enable dhcpcd@INTERFACE.service`
+`sudo systemctl enable dhcpcd@INTERFACE.service`
 * [wpa_supplicant as a systemd service](https://www.ianweatherhogg.com/tech/2015-08-05-creating-systemd-wpa_supplicant-instance.html):
-`systemctl enable wpa_supplicant@INTERFACE.service`
+`sudo systemctl enable wpa_supplicant@INTERFACE.service`
 ### 3. AUR manager configuration
 Managing AUR packages with [trizen](https://github.com/trizen/trizen).
 Install trizen using the following commands:
