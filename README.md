@@ -67,9 +67,9 @@ curl https://raw.githubusercontent.com/khamer/base16-termite/master/themes/base1
 1. Install [abduco](https://github.com/martanne/abduco)
 ```
 curl -LJO https://github.com/martanne/abduco/archive/master.zip
-unzip abduco-master.zip; cd abduco-master.zip
+unzip abduco-master.zip; cd abduco-master
 ./configure; make; sudo make install
-cd .. ; rm -rf abduco-master;rm abduco-master.zip
+cd .. ; rm -rf abduco-master; rm abduco-master.zip
 ```
 ### 8. Dev Env configuration
 #### 1. NVM configuration
