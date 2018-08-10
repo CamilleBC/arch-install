@@ -50,10 +50,31 @@ makepkg -si
 2. Install [thefuck](https://github.com/nvbn/thefuck):
 `trizen -Sy thefuck`
 3. Install [fisherman](https://github.com/fisherman/fisherman):
-`curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher`
+`curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher;`
 4. Install the fisherman plugins:
-`fisher fzf edc/bass omf/thefuck`
-### 5. Termite configuration
+`fisher fzf edc/bass omf/thefuck;`
+### 5.1 Simple Terminal configuration (option)
+1. Download all necessary sources for [st](https://st.suckless.org):
+```
+curl -LJO https://dl.suckless.org/st/st-0.8.1.tar.gz
+tar -xf st-0.8.1.tar.gz; cd st-0.8.1
+curl -LJO https://st.suckless.org/patches/scrollback/st-scrollback-0.8.diff
+curl -LJO https://st.suckless.org/patches/scrollback/st-scrollback-mouse-0.8.diff
+curl -LJO https://st.suckless.org/patches/scrollback/st-scrollback-mouse-altscreen-0.8.diff
+```
+2. Download the config.h file:
+`curl -LJ https://gist.githubusercontent.com/CamilleBC/065a62a10291a54f69a20900ffb2bef2/raw -o config.h`
+3. Patch the scrollback in st sources:
+```
+patch -p1 < st-scrollback-0.8.diff
+patch -p1 < st-scrollback-mouse-0.8.diff
+patch -p1 < st-scrollback-mouse-altscreen-0.8.diff
+```
+4. Install st:
+`sudo make install`
+5. Clean up:
+`cd ..; rm -rf st-0.8.1`
+### 5.2 Termite configuration (Option 2)
 1. Install [termite](https://github.com/thestinger/termite):
 `trizen -Sy termite`
 2. Install [onedark base16 color theme](https://github.com/khamer/base16-termite/blob/master/themes/base16-onedark.config):
