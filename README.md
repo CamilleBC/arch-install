@@ -92,6 +92,11 @@ unzip abduco-master.zip; cd abduco-master
 ./configure; make; sudo make install
 cd .. ; rm -rf abduco-master; rm abduco-master.zip
 ```
+#### 2. Rofi as a drop-in replacement for dmenu
+```
+trizen -Sy rofi
+trizen -Sy rofi-dmenu
+```
 ### 8. Dev Env configuration
 #### 1. NVM configuration
 To be able to use the Node.js Version Manager in fish shell, follow these steps:
