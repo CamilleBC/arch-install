@@ -114,3 +114,38 @@ end
 6. Set stable version to default
 `nvm alias default stable`
 #### 2. VScode configuration
+### 9. Package list
+* [adobe-source-code-pro-fonts 2.030ro+1.050it-4](https://github.com/adobe-fonts/source-code-pro): programming font.
+* [chromium 68.0.3440.106-1](): open-source WEB browser.
+* [cpupower 4.16-1](https://github.com/torvalds/linux/tree/master/tools/power/cpupower): CPU frequency manager. WITH laptop-mode-tools.
+* [efibootmgr 16-1](https://github.com/rhboot/efibootmgr): EFI boot manager. WITH grub2.
+* [fish 2.7.1-1](https://github.com/fish-shell/fish-shell): user shell.
+* [fzf 0.17.4-1](https://github.com/junegunn/fzf): Fuzzy finder. WITH neovim & fish.
+* [git 2.18.0-1](https://git-scm.com/): Software version manager.
+* [grub 2:2.02-7](https://www.gnu.org/software/grub/): Unix bootloader.
+* [i3-gaps 4.15.0.1-2](https://github.com/Airblader/i3): Tiling window manager. 
+* [i3blocks 1.4-6](https://github.com/vivien/i3blocks): Configurable blocks for i3 status bar. WITH i3-gaps. TODO.
+* [i3status 2.12-1](https://github.com/i3/i3status): Status bar fr i3. WITH i3-gaps.
+* [intel-ucode 20180807-1](https://downloadcenter.intel.com/search?keyword=processor+microcode+data+file): intel CPU microcode updates without need the BIOS/UEFI 
+* [irssi 1.1.1-2](https://irssi.org/): IRC CLI client.
+* [iw 4.14-1](https://wireless.wiki.kernel.org/en/users/Documentation/iw): Wireless interface manager.
+* [jq 1.5-6](https://stedolan.github.io/jq/): JSON processor
+* [laptop-mode-tools 1.72.2-3](https://github.com/rickysarraf/laptop-mode-tools): Laptop power saving package.
+* [neovim 0.3.1-1](https://neovim.io/): Modal text editor.
+* [ntfs-3g 2017.3.23-1](https://www.tuxera.com/community/open-source-ntfs-3g/): Read-write NTFS driver. Used for the shared windows data partition.
+* [openssh 7.7p1-2](https://www.openssh.com/): Remote login tools based wiht SSH protocol.
+* [os-prober 1.76-1](http://joeyh.name/code/os-prober/): Bootloader script for probing other OS partitions. WITH grub2.
+* [ripgrep 0.9.0-1](): 
+* [rofi 1.5.1-1](): 
+* [rofi-dmenu 1-1](): 
+* [thefuck 3.27-2](): 
+* [trizen 1:1.51-1](): 
+* [unzip 6.0-12](): 
+* [visual-studio-code-bin 1.25.1-3]():  
+* [wireless_tools 30.pre9-2](): 
+* [xclip 0.13-1](): 
+* [xf86-video-intel 1:2.99.917+831+ge7bfc906-1](): 
+* [xfsprogs 4.17.0-1](): 
+* [xorg-server 1.20.0-9](): 
+* [xorg-xinit 1.4.0-3](): 
+* [xorg-xrandr 1.5.0-1](): 
