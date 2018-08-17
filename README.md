@@ -114,6 +114,17 @@ end
 6. Set stable version to default
 `nvm alias default stable`
 #### 2. VScode configuration
+### 9. Audio and bluetooh configuration
+Install all the needed packages:
+`trizen -Sy bluez bluez-hid2hci pulseaudio pulseaudio-bluetooth pulseaudio-alsa`
+Launch the bluetoothctl and follow the procedure:
+```
+power on
+scan on
+pair MAC_ADDRESS
+connect MAC_ADDRESS
+scan off
+```
 ### 9. Package list
 * [adobe-source-code-pro-fonts 2.030ro+1.050it-4](https://github.com/adobe-fonts/source-code-pro): programming font.
 * [chromium 68.0.3440.106-1](): open-source WEB browser.
