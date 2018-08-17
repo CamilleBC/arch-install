@@ -126,11 +126,14 @@ connect MAC_ADDRESS
 scan off
 ```
 ### 9. Package list
-* [adobe-source-code-pro-fonts 2.030ro+1.050it-4](https://github.com/adobe-fonts/source-code-pro): programming font.
-* [chromium 68.0.3440.106-1](): open-source WEB browser.
+* [adobe-source-code-pro-fonts 2.030ro+1.050it-4](https://github.com/adobe-fonts/source-code-pro): Programming font.
+* [bluez](http://www.bluez.org/): Bluetooth cli manager.
+* [bluez-hid2hci](https://www.archlinux.org/packages/extra/x86_64/bluez-hid2hci/): Put bluetooth in HCI mode.
+* [bluez-utils](https://www.archlinux.org/packages/extra/x86_64/bluez-utils/): Various utilities for bluez.
+* [chromium 68.0.3440.106-1](): Open-source WEB browser.
 * [cpupower 4.16-1](https://github.com/torvalds/linux/tree/master/tools/power/cpupower): CPU frequency manager. WITH laptop-mode-tools.
 * [efibootmgr 16-1](https://github.com/rhboot/efibootmgr): EFI boot manager. WITH grub2.
-* [fish 2.7.1-1](https://github.com/fish-shell/fish-shell): user shell.
+* [fish 2.7.1-1](https://github.com/fish-shell/fish-shell): User shell.
 * [fzf 0.17.4-1](https://github.com/junegunn/fzf): Fuzzy finder. WITH neovim & fish.
 * [git 2.18.0-1](https://git-scm.com/): Software version manager.
 * [grub 2:2.02-7](https://www.gnu.org/software/grub/): Unix bootloader.
@@ -146,17 +149,20 @@ scan off
 * [ntfs-3g 2017.3.23-1](https://www.tuxera.com/community/open-source-ntfs-3g/): Read-write NTFS driver. Used for the shared windows data partition.
 * [openssh 7.7p1-2](https://www.openssh.com/): Remote login tools based wiht SSH protocol.
 * [os-prober 1.76-1](http://joeyh.name/code/os-prober/): Bootloader script for probing other OS partitions. WITH grub2.
-* [ripgrep 0.9.0-1](): 
-* [rofi 1.5.1-1](): 
-* [rofi-dmenu 1-1](): 
-* [thefuck 3.27-2](): 
-* [trizen 1:1.51-1](): 
-* [unzip 6.0-12](): 
-* [visual-studio-code-bin 1.25.1-3]():  
-* [wireless_tools 30.pre9-2](): 
-* [xclip 0.13-1](): 
-* [xf86-video-intel 1:2.99.917+831+ge7bfc906-1](): 
-* [xfsprogs 4.17.0-1](): 
-* [xorg-server 1.20.0-9](): 
-* [xorg-xinit 1.4.0-3](): 
-* [xorg-xrandr 1.5.0-1](): 
+* [pulsemixer](https://github.com/GeorgeFilipkin/pulsemixer): CLI egalizer for pulseaudio, using Ncurses.
+* [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/): Proxy and multiplexer for sound applications
+* [pulseaudio-alsa](https://www.archlinux.org/packages/extra/any/pulseaudio-alsa/): Pulseaudio config for ALSA.
+* [pulseaudio-bluetooth](https://www.archlinux.org/packages/extra/x86_64/pulseaudio-bluetooth/): Bluetooth support for pulseaudio
+* [ripgrep 0.9.0-1](https://github.com/BurntSushi/ripgrep): Search tool such as grep, but in Rust.
+* [rofi 1.5.1-1](https://github.com/DaveDavenport/rofi): Window switcher and application manager
+* [rofi-dmenu 1-1](https://aur.archlinux.org/packages/rofi-dmenu/): Symlink dmenu to rofi, used for i3.
+* [thefuck 3.27-2](https://github.com/nvbn/thefuck): Corrects the previous console command.
+* [trizen 1:1.51-1](https://github.com/trizen/trizen): Manager for AUR repos, and wrapper around pacman.
+* [unzip 6.0-12](http://infozip.sourceforge.net/UnZip.html): Extraction utility for zip files.
+* [visual-studio-code-bin 1.25.1-3](https://aur.archlinux.org/packages/visual-studio-code-bin/): Visual Studio Code ID. Used mostly for web apps.
+* [wireless_tools 30.pre9-2](https://hewlettpackard.github.io/wireless-tools/Tools.html): Tools too manipulate the Wireless Extensions. 
+* [xclip 0.13-1](https://sourceforge.net/projects/xclip/): X11 clipboard manager.
+* [xf86-video-intel 1:2.99.917+831+ge7bfc906-1](https://www.archlinux.org/packages/extra/x86_64/xf86-video-intel/): Intel video drivers for the Xorg server.
+* [xorg-server 1.20.0-9](https://xorg.freedesktop.org/wiki/): Server for the X window sytem. 
+* [xorg-xinit 1.4.0-3](https://www.archlinux.org/packages/extra/x86_64/xorg-xinit/): X org initialization program.
+* [xorg-xrandr 1.5.0-1](https://www.archlinux.org/packages/extra/x86_64/xorg-xrandr/): CLI for RandR extension
