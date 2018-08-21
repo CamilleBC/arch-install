@@ -97,6 +97,15 @@ cd .. ; rm -rf abduco-master; rm abduco-master.zip
 trizen -Sy rofi
 trizen -Sy rofi-dmenu
 ```
+#### 3. Lockscreen
+Manage lockscreen using (i3lock-color)[https://github.com/PandorasFox/i3lock-color/] and (betterlockscreen)[https://github.com/pavanjadhaw/betterlockscreen]
+```
+trizen -S i3lock-color
+trizen -S -S imagemagick feh xorg-xrandr xorg-xdpyinfo
+trizen -S betterlockscreen-git
+betterlockscreen -u /path/to/lockscreen-image
+```
+All shortcuts are managed in a script and the i3 config
 ### 8. Dev Env configuration
 #### 1. NVM configuration
 To be able to use the Node.js Version Manager in fish shell, follow these steps:
@@ -125,7 +134,13 @@ pair MAC_ADDRESS
 connect MAC_ADDRESS
 scan off
 ```
-### 9. Package list
+### 10. Power management
+Install [laptop-mode-tools 1.72.2-3](https://github.com/rickysarraf/laptop-mode-tools) and the (acpi client)[https://sourceforge.net/projects/acpiclient/]
+```
+trizen -S laptop-mode-tools acpi
+```
+TODO: define the power management setup (cron job using the acpi events and i3-msg?)
+### 11. Package list
 * [adobe-source-code-pro-fonts 2.030ro+1.050it-4](https://github.com/adobe-fonts/source-code-pro): Programming font.
 * [bluez](http://www.bluez.org/): Bluetooth cli manager.
 * [bluez-hid2hci](https://www.archlinux.org/packages/extra/x86_64/bluez-hid2hci/): Put bluetooth in HCI mode.
